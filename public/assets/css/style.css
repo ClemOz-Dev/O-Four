@@ -1,0 +1,255 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;   
+    background-image: url('../images/pexels-dapurmelodi-1109197.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(246, 133, 108, .8);
+}
+
+a:hover {
+    color: rgba(246, 133, 108, 1.1);
+}
+
+/** ----------------- HEADER ------------------- **/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 15%;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);   
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: none;
+}
+
+.logo {
+    width: 25%;
+    height: 100%;
+    background-image: url('../images/10min-ofour.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.header-nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/** ------------------- MAIN ------------------ **/
+
+main {
+    padding: 1rem;
+    display: flex;   
+}
+
+section {    
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 80%;
+}
+
+section h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section p {
+    font-style: oblique;
+    text-align: center;
+}
+
+/** ------ MAIN/ARTICLE ------ **/
+
+.excerpt {
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1rem 1rem 0 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 40%;
+}
+
+.excerpt--main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.excerpt--main-infos {
+    text-align: right;
+}
+
+.excerpt--title {
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.excerpt--season,
+.excerpt--diet {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.excerpt--season:before {
+    content: '';
+    background-image: url('../images/summer.svg');
+    background-size: 2rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.excerpt--diet:before {
+    content: '';
+    background-image: url('../images/leaf.svg');
+    background-size: 2rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.excerpt--footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.excerpt--footer-time,
+.excerpt--footer-rate,
+.excerpt--footer-cost {
+    width: 10%;
+    height: 15%;
+    text-align: center;
+}
+
+.excerpt--footer-time::before {
+    content: '';
+    background-image: url('../images/timer.svg');
+    background-size: 4rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.excerpt--footer-cost::before {
+    content: '';
+    background-image: url('../images/moneybag.svg');
+    background-size: 4rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.excerpt--footer-rate::before {
+    content: '';
+    background-image: url('../images/medal2.svg');
+    background-size: 4rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+/** ------ MAIN/ASIDE ------ **/
+
+aside {
+    width: 25%;    
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav{
+    margin-bottom: 2vh;
+}
+
+
+.main-nav-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-nav-item {
+    font-style: italic;
+    padding: .2rem;
+}
+
+
+/** ------------------- FOOTER ------------------ **/
+
+.footer {
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);    
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: none;
+    position: fixed;  
+    left: 30%;
+    width: 50%;
+    margin: auto;
+    transition: all .5s;
+}
+
+.hide {
+  opacity: 0;
+  bottom: -100%;
+}
+
+.show {
+  opacity: 1;
+  bottom: 0;
+}
+
+.footer p {
+    padding-top: .5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+
+/** ------------------ RECIPE ---------------- **/
